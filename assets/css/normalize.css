@@ -43,6 +43,17 @@
     }
 }
 
+@media screen and (max-width:950px) {
+    .contact_item {
+        width: 100% !important;
+    }
+
+    .contact_item:nth-child(2) {
+        margin-top: 50px;
+        width: 100% !important;
+    }
+}
+
 @media screen and (max-width:900px) {
     :root {
         --color-yellow: #FFD622;
@@ -176,6 +187,18 @@
     .header_enter_course span {
         display: none;
     }
+
+    .contact_form {
+        padding: 35px;
+    }
+
+    .secondary_info_item:nth-child(2) p {
+        margin-top: 30px;
+    }
+
+    .secondary_info_item:last-child a {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width:450px) {
@@ -226,6 +249,20 @@
 
     .hero {
         padding-top: 30px;
+    }
+
+    .contact_form button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .footer_list {
+        flex-direction: column;
+    }
+
+    .footer_item_socials {
+        margin-top: 20px;
     }
 }
 

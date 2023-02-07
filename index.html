@@ -27,10 +27,10 @@
         <div class="section-wrapp">
             <div class="container">
                 <nav class="header-nav">
-                    <a href="#" class="hader-logo">
+                    <a href="/" class="hader-logo">
                         <img src="./assets/image/logo.svg" alt="">
                     </a>
-                    <a href="#" class="header_enter_course" role="button">
+                    <a href="#contact" class="header_enter_course" role="button">
                         <span>
                             Kursni boshlash
                         </span>
@@ -126,7 +126,7 @@
                                     </p>
                                 </li>
                                 <li class="secondary_info_item">
-                                    <a href="#" role="button">
+                                    <a href="#contact" role="button">
                                         Kursni boshlash
                                     </a>
                                 </li>
@@ -236,7 +236,7 @@
                     <ul class="contact_list">
                         <li class="contact_item">
                             <h3 class="heading">
-                                Kurs kimlar uchun?
+                                Kimlar uchun?
                             </h3>
                             <p class="contact_text">
                                 Yuqori sinf maktab o’quvchilari , OTM talabalari va sohasini almashtirmoqchi bo’lgan
@@ -258,19 +258,20 @@
                                 Kompyuter haqida tushunchalarga ega bo’lish, foydalanuvchi darajasida undan foydalanish.
                             </p>
                         </li>
-                        <li class="contact_item">
-                            <form action="" class="contact_form">
+                        <li class="contact_item" id="contact">
+                            <form action="https://example.com/" class="contact_form">
                                 <h4 class="contact_body_heading">
-                                    O’rnanishni istaysizmi ?
+                                    O’rnanishni istaysizmi?
                                 </h4>
-                                <p class="contact_body_heading">
+                                <p class="contact_body_text">
                                     formani to’ldirib bizni bog’lanishimizni kuting. Keyingi guruhga start berilish
                                     vaqti siz bilan bo’glanamiz. Telegramda
-                                    <a href="https://t.me/@pybloguz">@pybloguz</a> kanaliga obuna bo’lish orqali ham
+                                    <a href="https://t.me/pybloguz">@pybloguz</a> kanaliga obuna bo’lish
+                                    orqali ham
                                     start vaqtini bilib olishingiz mumkin.
                                 </p>
                                 <label for="Ism">Ism</label>
-                                <input type="text" name="Ism" id="Ism">
+                                <input type="text" name="Ism" id="Ism" pattern="</>*&^">
                                 <label for="Telefon">Telefon</label>
                                 <input type="number" name="Telefon" id="Telefon">
                                 <label for="Yosh">Yosh</label>
@@ -280,7 +281,8 @@
                                 <label for="TgManzil">Telegram Manzil</label>
                                 <input type="text" name="TgManzil" id="TgManzil">
                                 <label for="Qoshimcha">Qo’shimcha xabar (agar bo’lsa)</label>
-                                <textarea type="text" name="Qoshimcha" id="Qoshimcha"></textarea>
+                                <input type="text" name="Qoshimcha" id="Qoshimcha">
+                                <button>Kursni boshlash</button>
                             </form>
                         </li>
                     </ul>
@@ -288,23 +290,48 @@
             </div>
         </div>
     </main>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="section-wrapp">
+            <div class="container">
+                <ul class="footer_list">
+                    <li class="footer_item_ci">
+                        pyblog 2023
+                    </li>
+                    <li class="footer_item_socials">
+                        <a href="https://www.facebook.com/pybloguz">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pyblog.uz/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://t.me/pybloguz">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var countDownDate = new Date("Feb 10, 2023 18:24:25").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.querySelector(".day").innerHTML = days
+            document.querySelector(".hour").innerHTML = hours
+            document.querySelector(".min").innerHTML = minutes
+            document.querySelector(".second").innerHTML = seconds
+            if (countDownDate < now) {
+                clearInterval(x);
+                document.querySelector(".hero-coundown").innerHTML = "Vaqt tugadi!";
+            }
+        }, 1000);
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
