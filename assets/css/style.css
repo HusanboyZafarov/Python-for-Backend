@@ -78,6 +78,7 @@ header {
     position: relative;
     top: 0;
     padding-top: 93px;
+    padding-bottom: 30px;
 }
 
 .header_enter_course img {
@@ -155,4 +156,9 @@ h3.heading {
 
 .up:hover {
     transform: scale(0.9);
+}
+
+.secondary {
+    padding-top: 44px;
+    padding-bottom: 30px;
 }
