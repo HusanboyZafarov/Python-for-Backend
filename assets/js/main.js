@@ -6,3 +6,8 @@ window.addEventListener("scroll", () => {
     up.style.height = header_enter_course.getBoundingClientRect().height
     header_enter_course.classList.toggle("scrolled", window.scrollY > 500)
 })
+let loader = document.querySelector(".loader")
+
+window.addEventListener("load", () => {
+    loader.classList.add("loaded")
+})
