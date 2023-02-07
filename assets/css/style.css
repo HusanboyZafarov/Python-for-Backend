@@ -27,6 +27,18 @@
     --size-countdown: 43px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-yellow);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -310,7 +322,12 @@ h3.heading {
     font-size: var(--size-contact-text);
     position: relative;
     z-index: 10;
-    margin: 10px 0;
+    margin: 15px 0;
+}
+
+.contact_form input::placeholder {
+    color: var(--color-black);
+    opacity: 0.6;
 }
 
 .contact_form {
@@ -331,16 +348,7 @@ h3.heading {
 }
 
 .contact_form label {
-    font-size: var(--size-contact-text);
-    position: relative;
-    top: 30px;
-    opacity: 0.7;
-}
-
-.contact_form label.hovered {
-    font-size: 14px;
-    position: relative;
-    top: 16px;
+    display: none;
 }
 
 .contact_form button {
