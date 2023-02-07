@@ -40,6 +40,11 @@
 
 body {
     background: var(--color-gray);
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .section-wrapp {
@@ -85,7 +90,9 @@ header {
     display: none;
 }
 
-.hero::before {
+.hero::before,
+.secondary::before,
+.third::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -151,14 +158,105 @@ h3.heading {
 }
 
 .up.scrolled {
-    right: 7%;
+    right: 4%;
 }
 
 .up:hover {
     transform: scale(0.9);
 }
 
-.secondary {
+.secondary,
+.third {
+    position: relative;
     padding-top: 44px;
     padding-bottom: 30px;
+}
+
+.secondary_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.secondary_item {
+    width: 48%;
+}
+
+.secondary_info_item:nth-child(2) p {
+    margin-top: 72px;
+}
+
+.secondary_info_item p {
+    margin: 20px 0;
+}
+
+.secondary_info_item a {
+    color: var(--color-yellow);
+    background: var(--color-black);
+    padding: 11px 35px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    margin-top: 39px;
+}
+
+.secondary_info_item a:hover {
+    transform: scale(0.9);
+}
+
+.secondary_item:nth-child(2) {
+    padding-top: 140px;
+}
+
+.secondary_info_right_item:nth-child(2),
+.secondary_info_right_item:nth-child(3),
+.secondary_info_right_item:nth-child(4) {
+    padding: 30px;
+    margin: 20px 0;
+    border: 1px solid var(--color-black);
+    border-radius: 36px;
+}
+
+.secondary_info_right_item:nth-child(2) {
+    margin-top: 72px;
+}
+
+.secondary_inner_list {
+    display: flex;
+    align-items: center;
+}
+
+.secondary_inner_item.heading {
+    font-size: var(--size-large);
+    font-family: 'Sen ExtraBold';
+    margin-right: 30px;
+    line-height: 80%;
+}
+
+.third_list_answer {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third_item_answer {
+    width: 60%;
+    padding: 35px 42px;
+    border: 1px solid var(--color-black);
+    border-radius: 36px;
+}
+
+.third_item_answer_image {
+    width: 30%;
+}
+
+.third_item_answer_image img {
+    width: 100%;
+}
+
+.reversed {
+    flex-direction: row-reverse;
 }
