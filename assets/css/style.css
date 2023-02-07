@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Sen Regular';
+    src: url('../fonts/Sen-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Sen Bold';
+    src: url('../fonts/Sen-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Sen ExtraBold';
+    src: url('../fonts/Sen-ExtraBold.ttf');
+}
+
+:root {
+    --color-yellow: #FFD622;
+    --color-black: #191923;
+    --color-gray: #CACACA;
+    --size-heading: 60px;
+    --size-big: 120px;
+    --size-large: 150px;
+    --size-btn: 24px;
+    --size-text: 26px;
+    --size-contact-heading: 32px;
+    --size-contact-text: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Sen Regular';
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+    font-size: var(--size-text);
+}
+
+body {
+    background: var(--color-gray);
+}
+
+.section-wrapp {
+    position: relative;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 31px 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_enter_course {
+    background: var(--color-black);
+    color: var(--color-yellow);
+    padding: 11px 35px;
+    border-radius: 10px;
+    font-family: 'Sen Bold';
+}
+
+.header_enter_course:hover {
+    transform: scale(0.9);
+}
+
+.hero {
+    position: relative;
+    top: 0;
+    padding-top: 93px;
+}
+
+.header_enter_course img {
+    display: none;
+}
+
+.hero::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 1px;
+    bottom: 0;
+    background: var(--color-black);
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hero-item {
+    width: 50%;
+}
+
+.hero-item img {
+    width: 100%;
+}
+
+h1.heading {
+    font-family: 'Sen Bold';
+    font-size: var(--size-big);
+}
+
+h3.heading {
+    font-family: 'Sen Bold';
+    font-size: var(--size-heading);
+}
+
+.hero-lower_info {
+    margin-top: 30px;
+}
+
+.hero-link {
+    padding: 11px 35px;
+    border-radius: 30px;
+    background: var(--color-yellow);
+    color: var(--color-black);
+    font-family: 'Sen Bold';
+    border: 2px solid var(--color-black);
+    margin-bottom: 22px;
+    display: inline-block;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 53px;
+    min-height: 53px;
+    background: var(--color-yellow);
+    color: var(--color-black);
+    border-radius: 10px;
+    position: fixed;
+    right: -50%;
+    bottom: 4%;
+    z-index: 1000;
+}
+
+.up.scrolled {
+    right: 7%;
+}
+
+.up:hover {
+    transform: scale(0.9);
+}

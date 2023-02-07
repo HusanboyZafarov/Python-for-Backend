@@ -1,0 +1,222 @@
+@media screen and (max-width:1200px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 60px;
+        --size-big: 120px;
+        --size-large: 150px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 60px;
+        --size-big: 120px;
+        --size-large: 150px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 60px;
+        --size-big: 120px;
+        --size-large: 150px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 60px;
+        --size-big: 110px;
+        --size-large: 140px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 60px;
+        --size-big: 100px;
+        --size-large: 130px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero-item {
+        width: 100%;
+    }
+
+    .hero-item-right {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 55px;
+        --size-big: 90px;
+        --size-large: 120px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 50px;
+        --size-big: 80px;
+        --size-large: 110px;
+        --size-btn: 24px;
+        --size-text: 26px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 45px;
+        --size-big: 70px;
+        --size-large: 100px;
+        --size-btn: 23px;
+        --size-text: 25px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+
+    .header_enter_course {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        padding: 0;
+        left: 4%;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        bottom: 4%;
+    }
+
+    .header_enter_course:hover {
+        transform: rotate(-90deg) scale(0.9);
+    }
+
+    .header-nav {
+        justify-content: center;
+    }
+
+    .header_enter_course img {
+        display: block;
+    }
+
+    .header_enter_course span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 40px;
+        --size-big: 70px;
+        --size-large: 100px;
+        --size-btn: 22px;
+        --size-text: 24px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 35px;
+        --size-big: 60px;
+        --size-large: 90px;
+        --size-btn: 21px;
+        --size-text: 23px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+
+    .up {
+        min-width: 60px;
+        min-height: 60px;
+    }
+
+    .up.scrolled {
+        right: 4%;
+    }
+
+    .header_enter_course:hover {
+        transform: scale(0.9) translateX(0%);
+    }
+
+    .hero {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    :root {
+        --color-yellow: #FFD622;
+        --color-black: #191923;
+        --color-gray: #CACACA;
+        --size-heading: 30px;
+        --size-big: 50px;
+        --size-large: 80px;
+        --size-btn: 20px;
+        --size-text: 22px;
+        --size-contact-heading: 32px;
+        --size-contact-text: 18px;
+    }
+}
