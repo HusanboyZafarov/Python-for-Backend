@@ -24,7 +24,7 @@
     --size-text: 26px;
     --size-contact-heading: 32px;
     --size-contact-text: 18px;
-    --size-countdown: 43px;
+    --size-countdown: 33px;
 }
 
 ::-webkit-scrollbar {
@@ -148,9 +148,10 @@ h3.heading {
 .hero-coundown span {
     position: relative;
     top: 7px;
-    left: 10px;
     font-family: 'Sen Bold';
     font-size: var(--size-countdown);
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 .hero-coundown sub {
@@ -318,6 +319,7 @@ h3.heading {
     border: none;
     border-bottom: 1px solid var(--color-black);
     outline: none;
+    padding: 5px;
     background: transparent;
     font-size: var(--size-contact-text);
     position: relative;

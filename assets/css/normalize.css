@@ -199,6 +199,10 @@
     .secondary_info_item:last-child a {
         margin-top: 15px;
     }
+
+    .hero {
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width:450px) {
