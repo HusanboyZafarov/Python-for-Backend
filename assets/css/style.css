@@ -18,12 +18,13 @@
     --color-black: #191923;
     --color-gray: #CACACA;
     --size-heading: 60px;
-    --size-big: 120px;
+    --size-big: 100px;
     --size-large: 150px;
     --size-btn: 24px;
     --size-text: 26px;
     --size-contact-heading: 32px;
     --size-contact-text: 18px;
+    --size-countdown: 43px;
 }
 
 * {
@@ -92,7 +93,8 @@ header {
 
 .hero::before,
 .secondary::before,
-.third::before {
+.third::before,
+.contact::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -128,7 +130,19 @@ h3.heading {
 }
 
 .hero-lower_info {
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+.hero-coundown span {
+    position: relative;
+    top: 7px;
+    left: 10px;
+    font-family: 'Sen Bold';
+    font-size: var(--size-countdown);
+}
+
+.hero-coundown sub {
+    font-family: 'Sen Bold';
 }
 
 .hero-link {
@@ -166,7 +180,8 @@ h3.heading {
 }
 
 .secondary,
-.third {
+.third,
+.contact {
     position: relative;
     padding-top: 44px;
     padding-bottom: 30px;
@@ -259,4 +274,22 @@ h3.heading {
 
 .reversed {
     flex-direction: row-reverse;
+}
+
+.hero-coundown {
+    font-family: 'Sen Bold';
+}
+
+.contact_list {
+    display: flex;
+}
+
+.contact_item {
+    width: 50%;
+}
+
+.contact_form input {
+    width: 100%;
+    border-bottom: 2px solid var(--color-black);
+    outline: none;
 }
